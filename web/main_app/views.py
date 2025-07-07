@@ -45,3 +45,56 @@ def logout_view(request):
     logout(request)
     messages.info(request,"you have successfully logged out")
     return redirect('login')
+def forget_passwordview(request):
+    messages.info(request,"Your Password change successfully")
+    return render(request,"forget-password.html")
+def DB_view(request):
+    return render(request,'dashboard.html')
+def shopview(request):
+    return render(request,'shop.html')
+def checkoutview(request):
+    return render(request,'checkout.html')
+def cartview(request):
+    return render(request,'cart.html')
+def pricingview(request):
+    return render(request,'pricing.html')
+def confirmationview(request):
+    return render(request,'confirmation.html')
+def productDetailview(request):
+    return render(request,'Product-single.html')
+def shopwithsidebarview(request):
+    return render(request,'shop-sidebar.html')
+def contactview(request):
+    return render(request,'contact.html')
+def aboutview(request):
+    return render(request,'about.html')
+def page_404view(request):
+    return render(request,'404.html')
+def comingsoonview(request):
+    return render(request,'coming-soon.html')
+def FQAview(request):
+    return render(request,'faq.html')
+def dashview(request):
+    return render(request,'dashboard.html')
+def ordersview(request):
+    return render(request,'order.html')
+def addressview(request):
+    return render(request,'address.html')
+def Profileview(request):
+    return render(request,'profile-details.html')
+def blog_lf_sidebarviews(request):
+    return render(request,'blog-left-sidebar.html')
+def blog_rg_sidebarviews(request):
+    return render(request,'blog-right-sidebar.html')
+def blog_full_width_sidebarviews(request):
+    return render(request,'blog-full-width.html')
+def blog_2_coloumeviews(request):
+    return render(request,'blog-grid.html')
+def blog_singleviews(request):
+    return render(request,'blog-single.html')
+def typographyviews(request):
+    return render(request,'typography.html')
+def btnviews(request):
+    return render(request,'buttons.html')
+def aletrsviews(request):
+    return render(request,'alerts.html')
